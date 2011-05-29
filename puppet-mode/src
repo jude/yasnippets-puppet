@@ -1,3 +1,0 @@
-#name: source
-# --
-source => "puppet://${1:source}",

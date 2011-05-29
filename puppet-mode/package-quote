@@ -1,0 +1,7 @@
+# name : package-quote
+# key : ``
+# condition : (looking-back "package\s+\{[^\}]*")
+# --
+"${1:name}" :
+   ensure => ${2:installed},
+   $0

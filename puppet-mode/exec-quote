@@ -1,0 +1,10 @@
+# name : exec-quote
+# key : ``
+# condition : (looking-back "exec\s+\{[^\}]*")
+# --
+"${1:name}": 
+    command => "${2:command}", 
+    onlyif => "${3:onlyif}",
+    logoutput => true,
+    require => [Package["${4:package}"]],
+    $0

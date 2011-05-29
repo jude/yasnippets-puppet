@@ -1,0 +1,10 @@
+# name : file-quote
+# key : ``
+# condition : (looking-back "file\s+\{[^\}]*")
+# --
+"${1:name}":
+   owner => "${2:root}",
+   group => "${3:root}",
+   mode => "${4:644}",
+   ensure => "${5:present}",
+   $0

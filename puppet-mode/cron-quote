@@ -1,0 +1,10 @@
+# name : cron-quote
+# key : ``
+# condition : (looking-back "cron\s+\{[^\}]*")
+# --
+"${1:name}": 
+    command => "${2:command}",
+    user => "${3:root}",
+    hour => ${4:hour},
+    minute => ${5:minute},
+    $0;

@@ -1,0 +1,8 @@
+# name : service-quote
+# key : ``
+# condition : (looking-back "service\s+\{[^\}]*")
+# --
+"${1:name}": 
+    enable => true, ensure => running,
+    require => [Package["${2:$1}"]],
+    $0

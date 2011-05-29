@@ -1,0 +1,6 @@
+# name : host-quote
+# key : ``
+# condition : (looking-back "host\s+\{[^\}]*")
+# --
+"${1:hostname}": 
+    ensure => present, ip => "${2:ipaddr}", host_aliases => ["${3:aliases}"]$0;
