@@ -1,0 +1,23 @@
+yasnippets-puppet
+yasnippets snippets for Emacs puppet-mode
+
+This is a collection of yasnippets for Emacs puppet-mode.
+The snippets feature context-sensitive `` expansions for a few of the more common puppet resources types.
+The latest source code is available at http://github.com/jude/yasnippets-puppet
+
+Dependencies (at worst.  I haven't tried earlier versions of yasnippet or emacs):
+- yasnippet >= 0.6.1c
+- emacs >= 23.3
+
+Installation
+> ln -s ./puppet-mode /your-snippets-dir/text-mode/puppet-mode
+
+License
+GPLv3
+
+Authors
+Jude Nagurney (jude@pwan.org).  
+Forked from the original yasnippet-puppet project started by Christopher Grim (christopher.grim@gmail.com)
+
+
+
